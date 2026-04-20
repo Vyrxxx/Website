@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Vyrx | Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+    body {
+        overflow-y: auto;
+        font-family: "Inter", sans-serif;
+        margin: 20px;
+        background: radial-gradient(circle at top, #07090f, #1a1f34);
+        color: #FFFFFF;
+    }
+    
+    a {
+        color: #FFFFFF;
+        text-decoration: none;
+        z-index: 3;
+    }
+
+    .Box h2 {
+        font-size: 17px;
+        font-family: 'Space Grotesk', sans-serif;
+    }
+
+    .Box h2.title {
+        font-family: 'Space Grotesk', sans-serif;
+        font-size: 20px;
+        background: linear-gradient(90deg, #ffffff, #4f7cff);
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+
+    .description {
+        font-size: 10px;
+    }
+
+
+    @media (max-width: 1150px) {
+        .Music {
+            width: 30%;
+            min-width: 300px;
+        }
+
+        a {
+            font-size: 10px;
+            width: 70%;
+        }
+
+        .Bar {
+            width: 100%;
+        }
+
+        h3 {
+            font-size: 12px;
+        }
+
+        p {
+            font-size: 10px;
+        }
+    }
+
+   .P1,
+    .P2 {
+        width: 80%;
+    }
+
+    .Music {
+        position: fixed;
+        top: 90%;
+    }
+
+    .Box {
+        margin: 100px auto 0;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        background-color: #0b0f1a;
+        padding-bottom: 100px;
+        padding-top: 10px;
+        width: 40%;
+        border-radius: 100px;
+        max-width: 600px;
+        min-width: 250px;
+        border: #FFFFFF;
+        box-shadow: 10px 10px 10px #0c0332;
+    }
+
+    .Title {
+        top: 14px;
+        left: 10px;
+        text-align: left;
+        position: fixed;
+        z-index: 2;
+    }
+
+    .Bar {
+        position: fixed;
+        background-color: rgba(0, 0, 0, 0.5);
+        width: 100%;
+        height: 40px;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1;
+    }
+
+    .Pages {
+        word-spacing: 5px;
+        top: 12px;
+        right: 10px;
+        text-align: right;
+        position: fixed;
+        z-index: 2;
+    }
+
+    .Pages a {
+        font-size: 16px;
+        transition: color 0.3s ease;
+    }
+
+    .Pages a:hover {
+        color: #7a1bb1;
+    }
+
+    .Background {
+        position: fixed;
+        align-items: center;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+        z-index: -2;
+    }
+
+</style>
+<body>
+    <a position="left" class="Title">Vyrx.info</a>
+    <div class="Bar"></div>
+    <div class="Pages">
+        <a href="skills.html">Skills</a>
+        <a href="index.html">Home</a>
+    </div>
+
+    <div class="Box">
+        <h2 class="title">Vyrx</h2>
+        <h5>Hello I am Vyrx, a 14-Year old developer | Learning cyber security.</h5>
+        <p class="description">
+            My main goal is to learn as much as I can about programming and cyber security,<br>
+            and to share my knowledge with others.<br>
+            I am currently learning Python, JavaScript, and C++.<br>
+            I am also interested in web development and game development.
+        </p>
+    </div>
+
+    <video autoplay muted loop class="Background" id="myVideo">
+        <source src="cutteryt.mp4" type="video/mp4">
+    </video>
+
+    <audio class="Music" loop controls>
+        <source src="_official__celeste_original_soundtrack___02___first_steps.mp3" type="audio/mpeg">
+    </audio>
+</body>
+</html>
